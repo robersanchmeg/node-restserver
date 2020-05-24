@@ -31,7 +31,7 @@ app.get('/usuario', verificaToken, (req, res) => {
                     cantidad
                 });
             });
-        })
+        });
 });
 
 app.post('/usuario', [verificaToken, verificaAdmin_Role], function(req, res) {
